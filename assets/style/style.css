@@ -33,3 +33,45 @@ header input {
   height: 30px;
   border-radius: 5px;
 }
+#lancamentos {
+  background: #040926;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 81px;
+}
+#lancamentos .video {
+  min-width: 50%;
+}
+#lancamentos .video iframe {
+  width: 40vw;
+  height: 60vh;
+}
+#lancamentos .info {
+  min-width: 50%;
+  height: 70vh;
+}
+
+
+
+
+
+
+
+
+
+
+/* queries */
+/* celular e tablets */
+@media (min-width: 0px) and (max-width: 768px) {
+  
+}
+/* computador */
+@media (min-width: 769px) and (max-width: 1279px){
+ 
+}
+/* telas maiores */
+@media (min-width: 1280px) {
+  
+}
