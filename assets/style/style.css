@@ -109,19 +109,54 @@ footer p {
 
 
 
-
-
-
-
-
-
 /* queries */
 /* celular e tablets */
 @media (min-width: 0px) and (max-width: 768px) {
-  
+  header {
+    display: flex;
+    justify-content: center;
+  }
+  header .no-exibition{
+    display: none;
+  }
+  #lancamentos {
+    flex-direction: column;
+    padding: 10px;
+  }
+  #lancamentos .video {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  #lancamentos .video iframe {
+    width: auto;
+    height: auto;
+  }
+  #lancamentos .info {
+    min-width: 50%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #lancamentos .info .infos {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  #lancamentos .info .infos p {
+    margin: 0.5rem;
+  }
 }
 /* computador */
 @media (min-width: 769px) and (max-width: 1279px){
+  header input {
+    display: none;
+  }
+  header nav {
+    width: 100%;
+    justify-content: space-around;
+  }
  
 }
 /* telas maiores */
