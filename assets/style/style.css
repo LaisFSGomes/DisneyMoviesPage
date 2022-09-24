@@ -40,7 +40,6 @@ header input {
   flex-direction: row;
   align-items: stretch;
   padding: 50px 0px;
-  /* border: 1px solid red; */
 }
 #lancamentos .video {
   min-width: 50%;
@@ -77,6 +76,41 @@ header input {
 }
 #stars img {
   width: 30px;
+}
+#destaque {
+  background: #040926;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px 30px;
+}
+#destaque h2 {
+  text-align: center;
+}
+#destaque .movies-wrapper {
+  display: flex;
+  overflow-x: scroll;
+}
+#destaque .movies-wrapper::-webkit-scrollbar{
+  width: 30px;
+}
+#destaque .movies-wrapper::-webkit-scrollbar-track{
+  background: transparent; 
+}
+#destaque .movies-wrapper::-webkit-scrollbar-thumb{
+  background-color: #ffffff1c;   
+  border-radius: 10px;       
+  height: 5px;
+}
+#destaque .movies-wrapper .movie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+#destaque .movies-wrapper .movie img {
+  max-width: 250px;
 }
 
 /*Footer*/
