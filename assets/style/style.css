@@ -265,69 +265,25 @@ form .user-details .input-box{
 /*Section Sugestões End*/
 
 /*Footer*/
-  footer {
+  footer div {
     background: #040926;
-    padding: 26px 8px;
-    position: relative;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
 }
-.footerlogo {
-  display: block;
-  margin-bottom: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80px;
-}
-#seletoridioma {
-    background-color: transparent;
-    border: none;
-    color: silver;
-    cursor: pointer;
-    display: inline-block;
-    margin: 8px auto;
-    padding: 0 26px;
-    text-align: center;
-    z-index: 1;
-    opacity: .6;
-    position: relative;
-}
-.footerglobo {
-
-  position: relative;
-  transform: translateY(-50%);
-  z-index: 0;
-  width: 16px;
-  left: 10px;
-
-}
-footer a.link, footer button.link {
-  color: silver;
-  display: inline-block;
-  margin-bottom: 0;
-  padding: 8px 12px;
-  text-decoration: none;
-  white-space: nowrap;
-}
-footer p {
+.footertexto {
     font-size: 12px;
     line-height: 21px;
     color: silver;
+    margin-left: 1vmin;
+    margin-top: 5vmin;
+    width: 93%;
+    text-align: center;
+}
+.footerlogo {
+  width: 80px;
 }
 /*Footer End */
 
-
-
-
-<<<<<<< HEAD
-
-
-
-
-
-
-
-=======
->>>>>>> 21a1eb67615109bd957303cb0eaa24c8b535424d
 /* queries */
 /* celular e tablets */
 @media (min-width: 0px) and (max-width: 768px) {
