@@ -48,19 +48,79 @@ header input {
   color: #FFFFFF;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  padding: 0px 81px;
+  align-items: stretch;
+  padding: 50px 0px;
 }
 #lancamentos .video {
   min-width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #lancamentos .video iframe {
-  width: 40vw;
-  height: 60vh;
+  width: 90%;
+  height: 90%;
 }
 #lancamentos .info {
   min-width: 50%;
-  height: 70vh;
+  max-height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#lancamentos .info p {
+  margin: 5px 0px;
+}
+#sinopse {
+  width: 90%;
+  height: 90%;
+}
+#lancamentos .info span {
+  font-weight: bold;
+}
+#info-avaliacoes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#stars img {
+  width: 30px;
+}
+#destaque {
+  background: #040926;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px 30px;
+}
+#destaque h2 {
+  text-align: center;
+}
+#destaque .movies-wrapper {
+  display: flex;
+  overflow-x: scroll;
+}
+#destaque .movies-wrapper::-webkit-scrollbar{
+  width: 30px;
+}
+#destaque .movies-wrapper::-webkit-scrollbar-track{
+  background: transparent; 
+}
+#destaque .movies-wrapper::-webkit-scrollbar-thumb{
+  background-color: #ffffff1c;   
+  border-radius: 10px;       
+  height: 5px;
+}
+#destaque .movies-wrapper .movie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+#destaque .movies-wrapper .movie img {
+  max-width: 250px;
 }
 
 /*Section Sugestões*/
@@ -258,6 +318,7 @@ footer p {
 
 
 
+<<<<<<< HEAD
 
 
 
@@ -265,15 +326,56 @@ footer p {
 
 
 
+=======
+>>>>>>> 21a1eb67615109bd957303cb0eaa24c8b535424d
 /* queries */
 /* celular e tablets */
 @media (min-width: 0px) and (max-width: 768px) {
-  
+  header {
+    display: flex;
+    justify-content: center;
+  }
+  header .no-exibition{
+    display: none;
+  }
+   #lancamentos {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0px;
+  }
+  #lancamentos .info p {
+    text-align: justify;
+  }
+  #stars img {
+    width: 30px;
+  }
 }
 /* computador */
 @media (min-width: 769px) and (max-width: 1279px){
- 
+  header input {
+    display: none;
+  }
+  header nav {
+    width: 100%;
+    justify-content: space-around;
+  }
+  #lancamentos {
+    padding: 30px 0px;
+  }
+  #lancamentos .video {
+    min-width: 60%;
+  }
+  #lancamentos .info {
+    min-width: 40%;
+  }
+  #info-avaliacoes h3 {
+    margin: 5px;
+  }
+  #stars img {
+    width: 30px;
+  }
 }
+ 
 /* telas maiores */
 @media (min-width: 1280px) {
   
