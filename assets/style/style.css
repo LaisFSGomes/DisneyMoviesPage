@@ -293,8 +293,29 @@ form .button input:hover {
 
 /*Sugestões Sobre End */
 /*Section Sugestões End*/
+/*Section Comunidade*/
+#comunidade {
+  background: hsl(229, 67%, 5%);
+  color: #F5F5F5;
+}
 
-
+#conteudoComunidade{
+  height: 100vh;
+  display: flex;
+  border: red 2px solid;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  justify-content: space-between;
+  color: #fff;
+}
+#conteudoComunidade #item {
+  margin: 10px;
+  background-color: pink;
+  width: 270px;
+  flex-grow: 2;
+}
+/*Section Comunidade End*/
 /*Footer*/
 footer div {
   background: #040926;
@@ -370,18 +391,15 @@ footer div {
   }
 
   .container form .user-detalhes {
-    max-height: 400px;
     overflow-x: hidden;
+    overflow-y: hidden;
   }
 
   .container form .button {
     height: 45px;
     width: 180px;
     padding-left: 25%;
-  }
-
-  .user-detalhes input, textarea::-webkit-scrollbar {
-    width: 5px;
+    
   }
   #sobreSugestoes p,li span {
     margin: 4%;
@@ -389,6 +407,7 @@ footer div {
   }
   /*section sugestao End*/
 }
+
 
 /* computador */
 @media (min-width: 769px) and (max-width: 1279px) {
