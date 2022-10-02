@@ -609,10 +609,9 @@ footer div {
   margin: 0 10px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1335px) {
   .favoritos-wrapper {
     flex-direction: row;
-
 }
 
 .favoritos {
