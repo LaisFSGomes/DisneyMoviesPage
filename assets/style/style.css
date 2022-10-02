@@ -151,7 +151,6 @@ header input {
 #destaque .movies-wrapper .movie img {
   max-width: 250px;
 }
-
 /*Section Sugestões*/
 /*Formulario*/
 #sugestoes {
@@ -160,6 +159,7 @@ header input {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  overflow-x: hidden;
 }
 
 #formularioSugestoes {
@@ -232,17 +232,33 @@ header input {
   border: 1px solid #8B008B;
 }
 
-.form .button {
-  padding-top: 20px;
-  height: 51px;
-  margin: 35px 0;
-  width: 180px;
-  padding-left: 150px;
+#sugestoes .container .form .user-detalhes .button {
+  margin-top: 10px;
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-.form .button input, textarea {
+#sugestoes .container .form .user-detalhes .button input {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 25vh;
+  color: #fff;
+  background: #132057;
+  border: 1px solid #111C4D;
+  box-shadow: 0px 4px 4px rgba(5, 9, 28, 0.67);
+  border-radius: 10px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+#sugestoes .container .form textarea {
   height: 100%;
-  width: 90%;
+  width: 100%;
   border: none;
   color: #fff;
   font-size: 16px;
@@ -252,17 +268,16 @@ header input {
   cursor: pointer;
   transition: all 0.3s ease;
   background: #111C4D;
-  align-items: center; 
   box-sizing: border-box;
   border: 3px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   outline: none;
-
 }
 
-.form .button input:hover {
-  background: #13205a;
+#sugestoes .container .form .user-detalhes .button input:hover {
+  background: #132a75;
+  border: 1px solid #8B008B;
 }
 
 /*Formulario End */
@@ -313,10 +328,8 @@ header input {
   max-width: 35px;
   min-height: 30px;
 }
-
 /*Sugestões Sobre End */
 /*Section Sugestões End*/
-
 
 
 /*Section Comunidade*/
@@ -413,8 +426,8 @@ footer div {
   }
 
   #sugestoes .titulo {
-    font-size: 16px;
-    font-weight: 100;
+    font-size: 25px;
+    font-weight: 400;
     text-align: center;
     padding: auto;
   }
@@ -425,32 +438,23 @@ footer div {
     justify-content: center;
   }
 
-  #formularioSugestoes .container .form .button {
-    width: 100%;
-    padding: 0%;
-    margin: 0%;
-    border: 0%;
-    display: flex;
-    align-self: center;
-  }
-
-  #formularioSugestoes .container .form .button input {
-    font-size: 12px;
-    font-weight: 200;
-    letter-spacing: 1px;
-    border-radius: 10px;
-    cursor: pointer;
-    width: 40vw;
-    margin-left: 25%;
+  #sugestoes .container .form .user-detalhes .button {
+    padding-top: 20px;
+    height: 51px;
+    margin: 35px 0;
+    width: 180px;
+    padding-left: 150px;
+    border: 5px pink solid;
   }
 
   #sobreSugestoes p,
   li span {
     font-size: clamp(1.0em, 1.0em + 0.7vw, 1.5em);
   }
+
   #sobreSugestoes p {
     width: 94%;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 28px;
     color: #FFFFFF;
     margin: 10px;
@@ -459,13 +463,8 @@ footer div {
     font-size: 28px;
     line-height: 30px;
   }
-
   /*section sugestao End*/
 }
-
-
-
-
 
 /* computador */
 @media (min-width: 769px) and (max-width: 1279px) {
@@ -610,10 +609,9 @@ footer div {
   margin: 0 10px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1335px) {
   .favoritos-wrapper {
     flex-direction: row;
-
 }
 
 .favoritos {
@@ -624,10 +622,11 @@ footer div {
   display: flex;
   justify-content: center;
 }
+}
 
 /*Formulário*/
 
-.row {
+#formulario .row {
   font:sans-serif;
   background-image: url(../img/leao-bg.png);
   width: 100vw;
@@ -635,12 +634,12 @@ footer div {
   background-size: cover;
 }
 
-form{
+#formulario form {
   width:25%;
   margin:0 auto;
 }
 
-input,textarea{
+#formulario input,textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 1em;
@@ -649,19 +648,20 @@ input,textarea{
   color: #F5F5F5;
   border-radius:10px;
 }
-h2{
+
+#formulario h2 {
   color: #F5F5F5;
   text-align: center;
   }
 
-label{
+  #formulario label {
   font-weight:bold;
   color: #F5F5F5;
   padding-bottom:5px;
   display:inline block;
   }
-button{
+  
+#formulario button{
     background-color: white;
     align-items: center;
-  
 }
