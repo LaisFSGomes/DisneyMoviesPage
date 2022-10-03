@@ -546,7 +546,7 @@ footer div {
   background: #091141;
   color: #FFFFFF;
   display: flex;
-  flex-direction: column;
+  flex-direction:column;
   justify-content: center;
   padding: 30px 30px;
 }
@@ -603,6 +603,7 @@ footer div {
 }
 
 .favoritos-wrapper {
+
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -657,7 +658,7 @@ footer div {
   #formulario label {
   font-weight:bold;
   color: #F5F5F5;
-  padding-bottom:5px;
+  padding: bottom 10px;
   display:inline block;
   }
   
@@ -665,3 +666,45 @@ footer div {
     background-color: white;
     align-items: center;
 }
+
+/* Top 10 de Filmes*/
+
+#top10{
+  background-color: #040926;
+  color: #FFFFFF;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Fórum de Discussões*/
+
+#forum .row {
+background-color: #040926;
+color:white ;
+}
+
+#forum h2 {
+  text-align: center;
+}
+#forum form{
+  width:75%;
+  margin: 0 auto;
+  box-shadow:0 7px  8px #999;
+}
+
+#forum input,textarea {
+  width: 95%;
+  padding: 8px;
+  margin-bottom:1em;
+  background-color:#999;
+}
+
+#forum button{
+  background-color:#040926;
+  align-items:center;
+  color: #FFFFFF;
+}
+
+
