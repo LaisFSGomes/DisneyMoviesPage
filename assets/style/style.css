@@ -9,7 +9,7 @@
 /* Configurações Padrão End */
 
 body {
-  /* font-family: "Avenir";*/
+  /* font-family: "Avenir"; */
   padding: 0px;
   margin: 0px;
   overflow-x: hidden;
@@ -34,6 +34,12 @@ header {
 header img {
   height: 35px;
   width: 79px;
+}
+header .no-exibition {
+  display: flex;
+}
+header .mobile-only {
+  display: none;
 }
 
 header nav {
@@ -107,6 +113,10 @@ header input {
 
 #stars img {
   width: 30px;
+  transition-duration: 0.5s;
+}
+#stars img:hover {
+  width: 30.5px;
 }
 
 #destaque {
@@ -392,13 +402,61 @@ footer div {
 @media (min-width: 0px) and (max-width: 768px) {
   header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   header .no-exibition {
     display: none;
   }
-
+  header .mobile-only {
+    display: flex;
+  }
+  header .mobile-only img {
+    width: 35px;
+    height: 35px;
+  }
+  header #navbar-mobile {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; 
+    background: rgba(0,0,0,0.8);
+    opacity:0;
+    /* -webkit-transition: opacity 0.5s ease-in;
+    -moz-transition: opacity 0.5s ease-in; */
+    transition: opacity 0.5s ease-in;
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  header #navbar-mobile:target {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .fechar {
+    position: absolute;
+    width: 30px;
+    right: 50%;
+    top: 0px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 5px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #FFF;
+    text-decoration: none;
+    border: 1px solid rgb(219, 216, 216);
+  }
+  #navbar-mobile nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #navbar-mobile nav a {
+    padding: 10px;
+  }
   #lancamentos {
     flex-direction: column;
     align-items: center;

@@ -12,13 +12,27 @@
 <body>
   <header>
     <img src="./assets/icons/disney.svg" alt="">
+
     <nav class="no-exibition">
-      <a href="">Lançamentos</a>
-      <a href="">Em destaque</a>
-      <a href="">Avaliações</a>
-      <a href="">Entrevistas e Making off</a>
+      <a href="#lancamentos">Lançamentos</a>
+      <a href="#destaque">Em destaque</a>
+      <a href="#avaliacoes">Avaliações</a>
+      <a href="#entrevistas">Entrevistas e Making off</a>
       <a href="">Novidades</a>
     </nav>
+    <div class="mobile-only">
+      <a href="#navbar-mobile"><img src="./assets/icons/menu.png"></a>
+      <div class="" id="navbar-mobile">
+        <div><a href="#fechar" title="Fechar" class="fechar">✕</a></div>
+        <nav class="">
+          <a href="#lancamentos">Lançamentos</a>
+          <a href="#destaque">Em destaque</a>
+          <a href="#avaliacoes">Avaliações</a>
+          <a href="#entrevistas">Entrevistas e Making off</a>
+          <a href="">Novidades</a>
+        </nav>
+      </div>
+    </div>
     <input type="search" name="" class="no-exibition">
   </header>
   <section id="lancamentos">
@@ -46,11 +60,11 @@
       <div id="info-avaliacoes">
         <h3>Avaliações</h3>
         <div id="stars">
-          <img src="./assets/icons/star.svg">
-          <img src="./assets/icons/star.svg">
-          <img src="./assets/icons/star.svg">
-          <img src="./assets/icons/star.svg">
-          <img src="./assets/icons/star.svg">
+          <img src="./assets/icons/star.svg" alt="estrela">
+          <img src="./assets/icons/star.svg" alt="estrela">
+          <img src="./assets/icons/star.svg" alt="estrela">
+          <img src="./assets/icons/star.svg" alt="estrela">
+          <img src="./assets/icons/star.svg" alt="estrela">
         </div>
       </div>
     </div>
@@ -271,8 +285,7 @@
       </div>
       <div class="movie">
         <div class="video">
-          <iframe src="https://www.youtube.com/embed/J1AvpWxEfkw" title="Divertidamente - Dubladores"
-            frameborder="0"
+          <iframe src="https://www.youtube.com/embed/J1AvpWxEfkw" title="Divertidamente - Dubladores" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
         </div>
@@ -302,48 +315,48 @@
         </div>
       </div>
   </section>
-  
+
   <section id="top10">
-<div class="top10-container">
-   <h2>Top 10 Filmes do Momento</h2><br>
-  <div class="top10">
-  <div>
-    <img src="assets/img/capafilm1.webp" width="250" height="350">
-  </div>
-  <div>
-    <p>Tarzan</p>
-  </div>
-  <div class="Top10">
-    <img src="assets/img/capafilm9.webp" width="250" height="350">
-  </div>
-  <div>
-    <p>Frozen</p>
-  </div>
-  <div class="Top10">
-    <img src="assets/img/capafilm9.webp" width="250" height="350">
-  </div>
-  <div>
-    <p>Frozen</p>
-  </div>
-  <div class="Top10">
-    <img src="assets/img/capafilm9.webp" width="250" height="350">
-  </div>
-  <div>
-    <p>Frozen</p>
-  </div>
-  <div class="Top10">
-    <img src="assets/img/capafilm9.webp" width="250" height="350">
-  </div>
-  <div>
-    <p>Frozen</p>
-  </div>
-  <div class="Top10">
-    <img src="assets/img/capafilm9.webp" width="250" height="350">
-  </div>
-  <div>
-    <p>Frozen</p>
-  </div>
-</div>
+    <div class="top10-container">
+      <h2>Top 10 Filmes do Momento</h2><br>
+      <div class="top10">
+        <div>
+          <img src="assets/img/capafilm1.webp" width="250" height="350">
+        </div>
+        <div>
+          <p>Tarzan</p>
+        </div>
+        <div class="Top10">
+          <img src="assets/img/capafilm9.webp" width="250" height="350">
+        </div>
+        <div>
+          <p>Frozen</p>
+        </div>
+        <div class="Top10">
+          <img src="assets/img/capafilm9.webp" width="250" height="350">
+        </div>
+        <div>
+          <p>Frozen</p>
+        </div>
+        <div class="Top10">
+          <img src="assets/img/capafilm9.webp" width="250" height="350">
+        </div>
+        <div>
+          <p>Frozen</p>
+        </div>
+        <div class="Top10">
+          <img src="assets/img/capafilm9.webp" width="250" height="350">
+        </div>
+        <div>
+          <p>Frozen</p>
+        </div>
+        <div class="Top10">
+          <img src="assets/img/capafilm9.webp" width="250" height="350">
+        </div>
+        <div>
+          <p>Frozen</p>
+        </div>
+      </div>
   </section>
   <section id="favoritos">
     <h2>Seus Filmes Favoritos</h2><br>
@@ -479,23 +492,23 @@
     <div id="formularioSugestoes">
       <h2 class="titulo"> Você tem alguma sugestão de filme?</h2>
       <div class="container">
-        <form class= "form" action="#">
+        <form class="form" action="#">
           <div class="user-detalhes">
             <div class="input-box">
               <span class="detalhes">Seu Nome:</span>
-              <input type="text"required>
+              <input type="text" required>
             </div>
             <div class="input-box">
               <span class="detalhes">E-mail: </span>
-              <input type="text"required>
+              <input type="text" required>
             </div>
             <div class="input-box">
               <span class="detalhes">Sugestão de Filme:</span>
-              <input type="text"required>
+              <input type="text" required>
             </div>
             <div class="input-box">
               <span class="detalhes">Breve Sinopse do Filme:</span>
-              <textarea type="text" rows="12" cols="40"required></textarea>
+              <textarea type="text" rows="12" cols="40" required></textarea>
             </div>
             <div class="button">
               <input type="submit" value="Enviar Sugestão">
@@ -553,23 +566,24 @@
 
   <section id="formulario">
     <div class="row">
-    <form>
-      <h2> Cadastre seu vídeo na nossa comunidade de fãs</h2>
-       <label for="inputNome">Seu nome:</label>
-       <input type="text"id="inputNome">
-    
-       <label for="inputEmail">Endereço de e-mail:</label>
-       <input type="text"id="inputEmail">
-    
-       <label for="inputvídeo">Upload do vídeo:</label>
-       <input type="text"id="inputvídeo">
-    
-       <label for="textareaDescrição">Descrição:</label>
-       <textarea type ="textareaDescrição" id="textareaDescrição"></textarea>     
-       <button>Enviar</button><form>
-       </form>
+      <form>
+        <h2> Cadastre seu vídeo na nossa comunidade de fãs</h2>
+        <label for="inputNome">Seu nome:</label>
+        <input type="text" id="inputNome">
+
+        <label for="inputEmail">Endereço de e-mail:</label>
+        <input type="text" id="inputEmail">
+
+        <label for="inputvídeo">Upload do vídeo:</label>
+        <input type="text" id="inputvídeo">
+
+        <label for="textareaDescrição">Descrição:</label>
+        <textarea type="textareaDescrição" id="textareaDescrição"></textarea>
+        <button>Enviar</button>
+        <form>
+        </form>
     </div>
-      
+
   </section>
 
   <section id="comunidade">
@@ -592,32 +606,33 @@
   <section id="forum">
     <div class="row">
       <h2> Fórum de Discussões </h2>
-    <form class="Card">
-       <label for="inputTítulo">Título:</label>
-       <input type="text"id="inputTítulo">
-      
-       <label for="textareaComentario">Comentário:</label>
-       <textarea nome="textareaComentario"id="textareaComentario"></textarea>  
+      <form class="Card">
+        <label for="inputTítulo">Título:</label>
+        <input type="text" id="inputTítulo">
 
-       <button>enviar</button><form>
+        <label for="textareaComentario">Comentário:</label>
+        <textarea nome="textareaComentario" id="textareaComentario"></textarea>
 
-
-
+        <button>enviar</button>
+        <form>
 
 
 
 
-       </form>
+
+
+
+        </form>
     </div>
 
 
 
-  <footer>
-    <div>
-      <p class="footertexto">&copy 2022. Todos os direitos reservados - Disciplina de Tecnologias Web<br><br></p>
-      <img class="footerlogo" src="./assets/icons/logofooter.svg">
-    </div>
-  </footer>
+    <footer>
+      <div>
+        <p class="footertexto">&copy 2022. Todos os direitos reservados - Disciplina de Tecnologias Web<br><br></p>
+        <img class="footerlogo" src="./assets/icons/logofooter.svg">
+      </div>
+    </footer>
 </body>
 
 </html>
