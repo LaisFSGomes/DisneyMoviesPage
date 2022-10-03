@@ -643,6 +643,33 @@ footer div {
   max-width: 250px;
 }
 
+/*Top 10 de filmes */
+#top10 {
+    background: #040926;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+/*#top10 h2 {
+  text-align: center;
+}*/
+
+.top10-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 0 12px;
+}
+
+@media (min-width: 1245px) {
+  .top10-wrapper {
+    flex-direction: row;
+  }
+}
+
 /* favoritos */
 
 #favoritos {
@@ -688,9 +715,10 @@ footer div {
 #formulario .row {
   font:sans-serif;
   background-image: url(../img/leao-bg.png);
+  display: flex;
   width: 100vw;
   height: 100vh;
-  background-size: cover;
+  background-size:cover;
 }
 
 #formulario form {
@@ -725,24 +753,9 @@ footer div {
     align-items: center;
 }
 
-/* Top 10 de Filmes*/
-
-#top10{
-  background-color: #040926;
-  color: #FFFFFF;
-  display:flex;
-  flex-direction:column;
-  justify-content: center;
-  align-items: center;
-}
-
-
-
-
-
 /*Fórum de Discussões*/
 
-#forum .row {
+#forum .discussões{
 background-color: #040926;
 color:white ;
 }
@@ -753,7 +766,7 @@ color:white ;
 #forum form{
   width:75%;
   margin: 0 auto;
-  box-shadow:0 7px  8px #999;
+  box-shadow:0 7px  8px #999; /*aplicar uma sombra */
 }
 
 #forum input,textarea {
@@ -766,7 +779,7 @@ color:white ;
 #forum button{
   background-color:#040926;
   align-items:center;
-  color: #FFFFFF;
+  color:#FFFFFF;
 }
 
 
