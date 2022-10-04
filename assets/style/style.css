@@ -385,13 +385,15 @@ header input {
   display: flex;
   justify-content: center;
   padding: 0px;
+  margin-top: 5%;
+  min-width: 5vw;
+  min-height: 8vh;
 }
 
 #sugestoes .container .form .user-detalhes .button input {
   margin-top: 50px;
   margin-bottom: 10px;
-  margin-left: 90%;
-  width: 50%;
+  min-width: 10vw;
   color: #fff;
   background: #132057;
   border: 1px solid #111C4D;
@@ -402,7 +404,7 @@ header input {
   font-weight: 200;
   font-size: 16px;
   line-height: 24px;
-  padding: 0px;
+  padding: 5px;
   margin: 0px;
 }
 
@@ -952,16 +954,16 @@ textarea {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
+  
   }
-
   #sugestoes .container .form .user-detalhes .button {
-    padding-top: 5px;
-    height: 71px;
-    margin: 35px 0;
-    width: 180px;
-    padding-left: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    margin-top: 5%;
+    min-width: 5vw;
+    min-height: 8vh;
   }
-
   #sobreSugestoes p,
   li span {
     font-size: clamp(1.0em, 1.0em + 0.7vw, 1.5em);
@@ -1021,7 +1023,6 @@ textarea {
 }
 
 
-
 /* computador */
 @media (min-width: 769px) and (max-width: 1279px) {
   header input {
@@ -1052,13 +1053,11 @@ textarea {
   #stars img {
     width: 30px;
   }
-}
-
-@media (min-width: 768px) {
   .avaliacoes-wrapper {
     flex-direction: row;
   }
 }
+
 
 /* telas maiores */
 @media (min-width: 1335px) {
