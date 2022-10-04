@@ -1064,29 +1064,7 @@ textarea {
     width: 30px;
   }
 }
-/* avaliacoes */
 
-#avaliacoes {
-  background: #040926;
-  color: #FFFFFF;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 30px 30px;
-  text-align: center;
-  align-items: center;
-}
-
-#avaliacoes h2 {
-  text-align: center;
-}
-
-.avaliacoes-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  margin: 0 10px;
-}
 @media (min-width: 768px) {
   .avaliacoes-wrapper {
     flex-direction: row;
