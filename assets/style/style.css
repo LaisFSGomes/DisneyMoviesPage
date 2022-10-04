@@ -640,7 +640,7 @@ header input {
 }
 
 .mensagens .container {
-  margin-top: 100px;
+  margin-top: 20px;
   padding-right: 30px;
   display: flex;
   justify-content: center;
@@ -982,9 +982,12 @@ textarea {
     margin: 10px;
   }
 
-  #sugestoes .titulo {
+  #comunidade .mensagens .titulo {
     font-size: 28px;
     line-height: 30px;
+    background-color: #091141;
+    text-shadow: 2px 2px 5px #29408b;
+    font-style: italic;
   }
 
   /*______________________section Comunidade______________*/
