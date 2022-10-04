@@ -1,4 +1,6 @@
-/* Configurações Padrão */
+/*-----------------------------------------------------------------------------------*/
+/*                              Configurações Padrão
+/*-----------------------------------------------------------------------------------*/
 @font-face {
   font-family: "Avenir";
   src: url(/assets/fonts/avenir_ff/AvenirLTStd-Black.otf);
@@ -6,7 +8,6 @@
   src: url(/assets/fonts/avenir_ff/AvenirLTStd-Roman.otf);
 }
 
-/* Configurações Padrão End */
 
 body {
   /* font-family: "Avenir"; */
@@ -19,6 +20,7 @@ body {
   line-height: 22px;
   letter-spacing: 0em;
 }
+
 /* _______________ header _______________ */
 header {
   background: hsl(229, 67%, 5%);
@@ -29,22 +31,27 @@ header {
   padding: 0px 40px;
   font-style: normal;
 }
+
 header img {
   height: 35px;
   width: 79px;
 }
+
 /* não exibir no mobile */
 header .no-exibition {
   display: flex;
 }
+
 header .mobile-only {
   display: none;
 }
+
 header nav {
   min-width: 60%;
   display: flex;
   justify-content: space-around;
 }
+
 header nav a {
   font-weight: 300;
   font-size: 1em;
@@ -52,12 +59,17 @@ header nav a {
   text-decoration: none;
   color: #FFFFFF;
 }
+
 header input {
   width: 400px;
   height: 30px;
   border-radius: 5px;
 }
-/* _______________ lançamentos _______________ */
+
+/*-----------------------------------------------------------------------------------*/
+/*                                Section lançamentos
+/*-----------------------------------------------------------------------------------*/
+
 #lancamentos {
   background: #040926;
   color: #FFFFFF;
@@ -66,16 +78,19 @@ header input {
   align-items: stretch;
   padding: 50px 0px;
 }
+
 #lancamentos .video {
   min-width: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 #lancamentos .video iframe {
   width: 90%;
   height: 90%;
 }
+
 #lancamentos .info {
   min-width: 50%;
   max-height: 60%;
@@ -84,13 +99,16 @@ header input {
   align-items: center;
   justify-content: center;
 }
+
 #lancamentos .info p {
   margin: 5px 0px;
 }
+
 #sinopse {
   width: 90%;
   height: 90%;
 }
+
 #lancamentos .info span {
   font-weight: bold;
 }
@@ -100,14 +118,20 @@ header input {
   flex-direction: column;
   align-items: center;
 }
+
 #lancamentos .info #info-avaliacoes #stars img {
   width: 30px;
   transition-duration: 0.5s;
 }
+
 #lancamentos .info #info-avaliacoes #stars img:hover {
   width: 30.5px;
 }
-/* _______________ em destaque _______________ */
+
+/*-----------------------------------------------------------------------------------*/
+/*                                Section Em Destaque
+/*-----------------------------------------------------------------------------------*/
+
 #destaque {
   background: #040926;
   color: #FFFFFF;
@@ -116,9 +140,11 @@ header input {
   justify-content: center;
   padding: 30px 30px;
 }
+
 #destaque h2 {
   text-align: center;
 }
+
 #destaque .movies-wrapper {
   display: flex;
   overflow-x: scroll;
@@ -127,25 +153,31 @@ header input {
 #destaque .movies-wrapper::-webkit-scrollbar {
   width: 30px;
 }
+
 #destaque .movies-wrapper::-webkit-scrollbar-track {
   background: transparent;
 }
+
 #destaque .movies-wrapper::-webkit-scrollbar-thumb {
   background-color: #ffffff1c;
   border-radius: 10px;
   height: 5px;
 }
+
 #destaque .movies-wrapper .movie {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 10px;
 }
+
 #destaque .movies-wrapper .movie img {
   max-width: 250px;
 }
 
-/* avaliacoes */
+/*-----------------------------------------------------------------------------------*/
+/*                                Section Avaliacoes 
+/*-----------------------------------------------------------------------------------*/
 
 #avaliacoes {
   background: #040926;
@@ -178,15 +210,16 @@ header input {
   justify-content: center;
 }
 
-/* fim avaliações */
+/*-----------------------------------------------------------------------------------*/
+/*                                Section Entrevistas
+/*-----------------------------------------------------------------------------------*/
 
-/* entrevistas */
 
 #entrevistas {
   background: #091141;
   color: #FFFFFF;
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   justify-content: center;
   padding: 30px 30px;
 }
@@ -225,9 +258,10 @@ header input {
   max-width: 250px;
 }
 
-/* fim entrevistas */
+/*-----------------------------------------------------------------------------------*/
+/*                                Section Favoritos
+/*-----------------------------------------------------------------------------------*/
 
-/* favoritos */
 
 #favoritos {
   background: #040926;
@@ -261,12 +295,12 @@ header input {
   justify-content: center;
 }
 
-/* fim favoritos */
 
 
+/*-----------------------------------------------------------------------------------*/
+/*                                Section Sugestões
+/*-----------------------------------------------------------------------------------*/
 
-
-/*Section Sugestões*/
 /*Formulario*/
 #sugestoes {
   background-color: #040926;
@@ -348,17 +382,16 @@ header input {
 }
 
 #sugestoes .container .form .user-detalhes .button {
-  margin-top: 10px;
-  height: 10vh;
-  width: 100%;
   display: flex;
   justify-content: center;
+  padding: 0px;
 }
 
 #sugestoes .container .form .user-detalhes .button input {
-  margin-top: 10px;
-  margin-bottom: 20px;
-  width: 25vh;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  margin-left: 90%;
+  width: 50%;
   color: #fff;
   background: #132057;
   border: 1px solid #111C4D;
@@ -369,6 +402,8 @@ header input {
   font-weight: 200;
   font-size: 16px;
   line-height: 24px;
+  padding: 0px;
+  margin: 0px;
 }
 
 #sugestoes .container .form textarea {
@@ -396,6 +431,7 @@ header input {
 }
 
 /*Formulario End */
+
 
 /*Sugestões Sobre*/
 #sobreSugestoes {
@@ -443,38 +479,230 @@ header input {
   max-width: 35px;
   min-height: 30px;
 }
+
 /*Sugestões Sobre End */
-/*Section Sugestões End*/
 
 
-/*Section Comunidade*/
-#comunidade {
-  background: hsl(229, 67%, 5%);
-  color: #F5F5F5;
-}
 
-#conteudoComunidade {
-  height: 100vh;
-  display: flex;
-  border: red 2px solid;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: stretch;
-  justify-content: space-between;
+/*-----------------------------------------------------------------------------------*/
+/*                         Section Comunidade
+/*-----------------------------------------------------------------------------------*/
+#comunidade .titulo {
+  font-size: 25px;
+  font-weight: 400;
+  text-align: center;
+  padding: 10px;
   color: #fff;
+  margin: 0px;
+  line-height: 30px;
 }
 
-#conteudoComunidade #item {
+#comunidade {
+  padding: 0;
+  margin: 0;
+  background-color: #040714;
+
+}
+
+#comunidade #containerComunidade {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 20% 50% 30%;
+}
+
+#comunidade #containerComunidade .usuarios {
+  height: 100%;
+}
+
+#comunidade #containerComunidade .usuarios ul {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#comunidade #containerComunidade .usuarios li {
+  list-style: none;
+  width: 100%;
+  margin: 5px;
+  padding: 0px;
+  border: 0px;
+  align-self: center;
+}
+
+#comunidade #containerComunidade .usuarios img {
+  border-radius: 80px;
+  width: 20%;
+  height: 20%;
+  padding-right: 3px;
+}
+
+#comunidade #containerComunidade .usuarios span {
+  font-weight: 500;
+  font-size: 20px;
+  color: #FFFFFF;
+  width: 79%;
+  vertical-align: 15px;
+}
+
+#comunidade #containerComunidade .divComunidades {
+  height: 100%;
+}
+
+#comunidade #containerComunidade .mensagens {
+  height: 100%;
+}
+
+#comunidadefilmesherois,
+#comunidadefilmesprincesa,
+#comunidadefilmesfamilia {
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 98%;
+  margin: 2px;
+}
+
+#comunidade #comunidadefilmesherois .movies-wrapper,
+#comunidade #comunidadefilmesprincesa .movies-wrapper,
+#comunidade #comunidadefilmesfamilia .movies-wrapper {
+  display: flex;
+  overflow-x: scroll;
+}
+
+#comunidade #comunidadefilmesherois .movies-wrapper::-webkit-scrollbar,
+#comunidade #comunidadefilmesprincesa .movies-wrapper::-webkit-scrollbar,
+#comunidade #comunidadefilmesfamilia .movies-wrapper::-webkit-scrollbar {
+  width: 11px;
+  height: 1vh;
+}
+
+#comunidadefilmesherois .movies-wrapper::-webkit-scrollbar-track,
+#comunidadefilmesprincesa .movies-wrapper::-webkit-scrollbar-track,
+#comunidadefilmesfamilia .movies-wrapper::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+#comunidadefilmesherois .movies-wrapper::-webkit-scrollbar-thumb,
+#comunidadefilmesprincesa .movies-wrapper::-webkit-scrollbar-thumb,
+#comunidadefilmesfamilia .movies-wrapper::-webkit-scrollbar-thumb {
+  background-color: #040926;
+  border-radius: 10px;
+  width: 11px;
+}
+
+#comunidadefilmesherois .movies-wrapper .movie,
+#comunidadefilmesprincesa .movies-wrapper .movie,
+#comunidadefilmesfamilia .movies-wrapper .movie {
+  display: inline;
+  margin-right: 10px;
+}
+
+#comunidadefilmesherois .movies-wrapper .movie img,
+#comunidadefilmesprincesa .movies-wrapper .movie img,
+#comunidadefilmesfamilia .movies-wrapper .movie img {
+  width: 200px;
+  height: 130px;
+}
+
+#comunidadefilmesherois .movies-wrapper .movie p,
+#comunidadefilmesprincesa .movies-wrapper .movie p,
+#comunidadefilmesfamilia .movies-wrapper .movie p {
+  font-size: 12px;
+  text-align: center;
+  font-style: bold;
+  overflow: hidden;
+  white-space: wrap;
+}
+
+.mensagens {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+.mensagens .container {
+  margin-top: 100px;
+  padding-right: 30px;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+}
+
+.mensagens .container #dialogo {
+  display: flex;
+}
+
+.mensagens .container #dialogo .imgdialogo {
+  border-radius: 70px;
+  max-width: 55px;
+  max-height: 55px;
+  margin: 20px;
+}
+
+.mensagens .container #dialogo .imgdialogoresposta {
+  border-radius: 70px;
+  max-width: 55px;
+  max-height: 55px;
   margin: 10px;
-  background-color: pink;
-  width: 270px;
-  flex-grow: 2;
+  margin-left: 40px;
 }
 
-/*Section Comunidade End*/
+.mensagens .container #dialogo .mensagemdialogo {
+  font-family: 'open sans';
+  font-size: .70em;
+  margin-bottom: 20px;
+  border-radius: 25px;
+  width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  color: #000;
+  justify-content: center;
+  background-color: #fff;
+  padding: 10px;
+  margin-right: 30px;
+}
 
+.mensagens .container #dialogo .mensagemdialogoenviar {
+  font-family: 'open sans';
+  font-size: .70em;
+  border-radius: 20px;
+  width: 900px;
+  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  color: #000;
+  background: #D9D9D9;
+  margin-top: 50px;
+}
 
-/*Footer*/
+.mensagens .container #dialogo label {
+  font-size: 14px;
+  text-align: center;
+  color: white;
+  width: 100%;
+  max-height: 20px;
+  padding-bottom: 10px;
+}
+
+.mensagens .container #dialogo .correiosbutton {
+  max-width: 55px;
+  max-height: 55px;
+  margin-top: 80px;
+  border-radius: 20px;
+  margin-left: 10px;
+
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*                                  Footer
+/*-----------------------------------------------------------------------------------*/
 footer div {
   background: #040926;
   display: flex;
@@ -495,26 +723,20 @@ footer div {
   width: 80px;
 }
 
-/*Footer End */
+/*-----------------------------------------------------------------------------------*/
+/*                         Section Top 10 de filmes
+/*-----------------------------------------------------------------------------------*/
 
-
-
-
-
-
-
-
-/*Top 10 de filmes */
 #top10 {
-    background: #040926;
-    color: #FFFFFF;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
+  background: #040926;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
 }
 
-.top10-wrapper{
+.top10-wrapper {
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -527,84 +749,108 @@ footer div {
   }
 }
 
-/*Formulário*/
+/*-----------------------------------------------------------------------------------*/
+/*                         Section Formulário
+/*-----------------------------------------------------------------------------------*/
 
 #formulario .row {
-  font:sans-serif;
+  font: sans-serif;
   background-image: url(../img/leao-bg.png);
   display: flex;
   width: 100vw;
   height: 100vh;
-  background-size:cover;
+  background-size: cover;
 }
 
 #formulario form {
-  width:25%;
-  margin:0 auto;
+  width: 25%;
+  margin: 0 auto;
 }
 
-#formulario input,textarea{
+#formulario input,
+textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 1em;
   font: 1em sans-serif;
   background-color: #0a2083;
   color: #F5F5F5;
-  border-radius:10px;
+  border-radius: 10px;
 }
 
 #formulario h2 {
   color: #F5F5F5;
   text-align: center;
-  }
-
-  #formulario label {
-  font-weight:bold;
-  color: #F5F5F5;
-  padding: bottom 10px;
-  display:inline block;
-  }
-  
-#formulario button{
-    background-color: white;
-    align-items: center;
 }
 
-/*Fórum de Discussões*/
+#formulario label {
+  font-weight: bold;
+  color: #F5F5F5;
+  padding: bottom 10px;
+  display: inline block;
+}
 
-#forum .discussões{
-background-color: #040926;
-color:white ;
+#formulario button {
+  background-color: white;
+  align-items: center;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*                         Section Fórum de Discussões
+/*-----------------------------------------------------------------------------------*/
+
+#forum .discussões {
+  background-color: #040926;
+  color: white;
 }
 
 #forum h2 {
   text-align: center;
-}
-#forum form{
-  width:75%;
-  margin: 0 auto;
-  box-shadow:0 7px  8px #999; /*aplicar uma sombra */
+  padding: 10px;
+  margin: 0px;
 }
 
-#forum input,textarea{
+#forum form {
+  width: 75%;
+  margin: 0 auto;
+  box-shadow: 0 7px 8px #999;
+  /*aplicar uma sombra */
+}
+
+#forum input,
+textarea {
   width: 95%;
   padding: 8px;
-  margin-bottom:1em;
+  margin-bottom: 1em;
   background-color: #0a2083;
 }
 
-#forum button{
+#forum button {
   background-color: #0a2083;
-  align-items:center;
-  color:#FFFFFF;
+  align-items: center;
+  color: #FFFFFF;
 }
 
+/*-----------------------------------------------------------------------------------*/
+/*                                    Queries
+/*-----------------------------------------------------------------------------------*/
 
-
-/*______________________________ queries _________________________*/
 /* celular e tablets */
 @media (min-width: 0px) and (max-width: 768px) {
-/* _________header_____________ */
+  body {
+    /* font-family: "Avenir"; */
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 450;
+    line-height: 18px;
+    letter-spacing: 0em;
+  }
+
+
+  /* _________header_____________ */
   header {
     display: flex;
     justify-content: space-between;
@@ -613,31 +859,36 @@ color:white ;
   header .no-exibition {
     display: none;
   }
+
   header .mobile-only {
     display: flex;
   }
+
   header .mobile-only img {
     width: 35px;
     height: 35px;
   }
+
   header #navbar-mobile {
     position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
-    left: 0; 
-    background: rgba(0,0,0,0.8);
-    opacity:0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    opacity: 0;
     transition: opacity 0.5s ease-in;
     pointer-events: none;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
+
   header #navbar-mobile:target {
     opacity: 1;
     pointer-events: auto;
   }
+
   .fechar {
     position: absolute;
     width: 30px;
@@ -652,28 +903,33 @@ color:white ;
     text-decoration: none;
     border: 1px solid rgb(219, 216, 216);
   }
+
   #navbar-mobile nav {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
   #navbar-mobile nav a {
     padding: 10px;
   }
+
   /* __________lançamentos_________________ */
   #lancamentos {
     flex-direction: column;
     align-items: center;
     padding: 20px 0px;
   }
+
   #lancamentos .info p {
     text-align: justify;
   }
+
   #stars img {
     width: 30px;
   }
 
-  /*section sugestao*/
+  /*____________________section sugestao End________________*/
   #sugestoes {
     display: flex;
     flex-direction: column;
@@ -686,10 +942,10 @@ color:white ;
   }
 
   #sugestoes .titulo {
-    font-size: 25px;
-    font-weight: 400;
+    font-size: 30px;
+    font-weight: 500;
     text-align: center;
-    padding: auto;
+    padding: 20px;
   }
 
   #formularioSugestoes .container {
@@ -699,12 +955,11 @@ color:white ;
   }
 
   #sugestoes .container .form .user-detalhes .button {
-    padding-top: 20px;
-    height: 51px;
+    padding-top: 5px;
+    height: 71px;
     margin: 35px 0;
     width: 180px;
-    padding-left: 150px;
-    border: 5px pink solid;
+    padding-left: 30px;
   }
 
   #sobreSugestoes p,
@@ -719,18 +974,60 @@ color:white ;
     color: #FFFFFF;
     margin: 10px;
   }
+
   #sugestoes .titulo {
     font-size: 28px;
     line-height: 30px;
   }
-  /*section sugestao End*/
+
+  /*______________________section Comunidade______________*/
+  #comunidade {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #comunidade #containerComunidade {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+
+  .mensagens {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .mensagens .container #dialogo .imgdialogoresposta {
+    max-width: 50px;
+    max-height: 50px;
+    margin: 10px;
+    margin-left: 60px;
+  }
+
+  .mensagens .container #dialogo .mensagemdialogo {
+    width: 150px;
+  }
+
+  .mensagens .container #dialogo .mensagemdialogoenviar {
+    width: 150px;
+  }
+
 }
+
+
 
 /* computador */
 @media (min-width: 769px) and (max-width: 1279px) {
   header input {
     display: none;
   }
+
   header nav {
     width: 100%;
     justify-content: space-around;
@@ -739,15 +1036,19 @@ color:white ;
   #lancamentos {
     padding: 30px 0px;
   }
+
   #lancamentos .video {
     min-width: 60%;
   }
+
   #lancamentos .info {
     min-width: 40%;
   }
+
   #info-avaliacoes h3 {
     margin: 5px;
   }
+
   #stars img {
     width: 30px;
   }
