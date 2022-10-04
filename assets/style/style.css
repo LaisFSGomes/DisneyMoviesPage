@@ -210,6 +210,16 @@ header input {
   justify-content: center;
 }
 
+.avaliacao {
+  display: grid;
+}
+
+#avaliacoes-img {
+  display: flex;
+  justify-content: center;
+}
+
+
 /*-----------------------------------------------------------------------------------*/
 /*                                Section Entrevistas
 /*-----------------------------------------------------------------------------------*/
@@ -1082,15 +1092,6 @@ textarea {
     flex-direction: row;
   }
 }
-.avaliacao {
-  display: grid;
-}
-
-#avaliacoes-img {
-  display: flex;
-  justify-content: center;
-}
-
 
 /* telas maiores */
 @media (min-width: 1335px) {
