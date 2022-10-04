@@ -653,11 +653,7 @@ footer div {
     align-items: center;
 }
 
-/*#top10 h2 {
-  text-align: center;
-}*/
-
-.top10-wrapper {
+.top10-wrapper{
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -726,7 +722,7 @@ footer div {
   margin:0 auto;
 }
 
-#formulario input,textarea {
+#formulario input,textarea{
   width: 100%;
   padding: 10px;
   margin-bottom: 1em;
@@ -769,15 +765,15 @@ color:white ;
   box-shadow:0 7px  8px #999; /*aplicar uma sombra */
 }
 
-#forum input,textarea {
+#forum input,textarea{
   width: 95%;
   padding: 8px;
   margin-bottom:1em;
-  background-color:#999;
+  background-color: #0a2083;
 }
 
 #forum button{
-  background-color:#040926;
+  background-color: #0a2083;
   align-items:center;
   color:#FFFFFF;
 }
