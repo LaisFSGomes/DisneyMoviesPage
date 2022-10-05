@@ -494,7 +494,67 @@ header input {
 
 /*Sugestões Sobre End */
 
+/*-----------------------------------------------------------------------------------*/
+/*                         Section Novidades
+/*-----------------------------------------------------------------------------------*/
 
+#novidades {
+  background: #040926;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px 30px;
+  text-align: center;
+  align-items: center;
+}
+
+#novidades h2 {
+  text-align: center;
+}
+
+.novidades-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 0 10px;
+}
+
+#novidade {
+  min-width: 44%;
+}
+
+#novidade .container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.textonovidade {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.hug {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px 5px;
+  width: 160px;
+  margin: 5px;
+  height: 20px;
+  background: #D9D9D9;
+  border-radius: 16px;
+  color: black;
+}
+
+#hug-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 160px;
+}
 
 /*-----------------------------------------------------------------------------------*/
 /*                         Section Comunidade
@@ -989,7 +1049,7 @@ textarea {
     text-shadow: 2px 2px 5px #29408b;
     font-style: italic;
   }
-
+  
   /*______________________section Comunidade______________*/
   #comunidade {
     padding: 0;
@@ -1070,6 +1130,12 @@ textarea {
 
 @media (min-width: 768px) {
   .avaliacoes-wrapper {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 768px) {
+  .novidades-wrapper {
     flex-direction: row;
   }
 }
