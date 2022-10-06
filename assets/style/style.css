@@ -849,24 +849,54 @@ footer div {
 #top10 {
   background: #040926;
   color: #FFFFFF;
-  display: flex;
-  flex-direction: column;
+}
+
+#top10 h2{
+  margin:0px;
+  padding:0px;
+  border:0px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 61px;
   text-align: center;
-  align-items: center;
+  color: #fff;
+
 }
 
-.top10-wrapper {
+#top10 .movie {
   display: flex;
-  flex-direction: column;
-  gap: 15px;
-  margin: 0 12px;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow-x: scroll;
 }
 
-@media (min-width: 1245px) {
-  .top10-wrapper {
-    flex-direction: row;
-  }
+#top10 .movie .top10 img {
+  max-width:210px;
+  max-height:280px;
+  margin: 13px;
+} 
+
+
+#top10 .movie::-webkit-scrollbar {
+  width: 11px;
+  height: 3vh;
 }
+
+
+#top10 .movie::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+
+#top10 .movie::-webkit-scrollbar-thumb {
+  background-color: #091141;
+  border-radius: 10px;
+  width: 11px;
+}
+
+
+
 
 /*-----------------------------------------------------------------------------------*/
 /*                         Section Formulário
@@ -915,40 +945,69 @@ textarea {
 }
 
 /*-----------------------------------------------------------------------------------*/
-/*                         Section Fórum de Discussões
+/*                         Section Forum de Discussões
 /*-----------------------------------------------------------------------------------*/
-
-#forum .discussões {
-  background-color: #040926;
-  color: white;
-}
-
-#forum h2 {
-  text-align: center;
-  padding: 10px;
-  margin: 0px;
-}
-
-#forum form {
-  width: 75%;
-  margin: 0 auto;
-  box-shadow: 0 7px 8px #999;
-  /*aplicar uma sombra */
-}
-
-#forum input,
-textarea {
-  width: 95%;
-  padding: 8px;
-  margin-bottom: 1em;
-  background-color: #0a2083;
-}
-
-#forum button {
-  background-color: #0a2083;
+#forum {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  color: #FFFFFF;
+  background-color: #040714;
+  color: #fff;
+
 }
+#forum .discussoes h2 {
+  margin:0px;
+  padding:0px;
+  border:0px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 61px;
+  text-align: center;
+  color: #fff;
+}
+
+#forum .discussoes {
+  border: 4px rgb(128, 0, 49) solid;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+}
+#forum .formForum {
+  margin-bottom: 5%;
+  background-color: #D9D9D9;
+  border-radius: 3px; 
+  margin-bottom: 5%;
+}
+
+#forum .dialogoforum {
+  background-color: #D9D9D9;
+  color: #000;
+  margin-bottom: 5%;
+  border-radius: 3px;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  
+}
+#forum .dialogoforum .titulomensagem {
+  text-align: center;
+}
+#forum .dialogoforum .conteudomensagem{
+  text-align:start;
+}
+
+#forum .dialogoforum .dialogoforumimg .imgdialogo {
+  border-radius: 80px;
+  width: 150px;
+  height: 150px;
+  margin: 30px 0px 30px 30px;
+}
+
 
 /*-----------------------------------------------------------------------------------*/
 /*                                    Queries
