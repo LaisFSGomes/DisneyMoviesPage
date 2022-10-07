@@ -332,7 +332,7 @@ header input {
   text-align: center;
   margin-bottom: 0px;
   padding-bottom: 0px;
-  line-height: 22px;
+  line-height: 40px;
 }
 
 #formularioSugestoes .container {
@@ -587,10 +587,10 @@ header input {
   flex-direction: column;
   align-items: center;
   
+
 }
 #novidades #novidadetrailer h2, 
-
-#novidades #propaganda h2 {
+#novidades #propaganda .titulo {
   font-size: 25px;
   font-weight: 400;
   text-align: center;
@@ -1030,7 +1030,6 @@ footer div {
 }
 
 #forum .discussoes {
-  border: 4px rgb(128, 0, 49) solid;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -1321,21 +1320,29 @@ footer div {
   display: flex;
   justify-content: center;
   align-items: center;
-  background:none;
 }
 #formulario .row h2 {
-  line-height: 30px;
+  padding: 25px;
+  margin: 0px;
+  border: 0px;
+  line-height: 20px;
 }
 #formulario form {
   padding: 0px;
   margin: 0px;
   border: 0px;
+  max-width: 90%;
+  max-height: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
 
 #formulario .row label {
   font-weight: bold;
   color: #F5F5F5;
-  height: 32px;
+  height: 15px;
   width: 80%;
   font-size: 16px;
   padding: 0px;
@@ -1344,7 +1351,7 @@ footer div {
   padding-right: 30px;
 }
 #formulario .row input {
-  width: 300px;
+  width: 50vw;
   margin-bottom: 25px;
   padding: 0px;
   margin: 0px;
@@ -1354,8 +1361,8 @@ footer div {
 }
 #formulario .row textarea {
   background: #132057;
-  width: 80%;
-  height: 158.52px;
+  width: 50vw;
+  height: 100px;
   border: 1.13227px solid #040714;
   border-radius: 11.3227px;
   resize: none;
@@ -1366,7 +1373,11 @@ footer div {
 }
 
 #formulario .row form .button {
-  margin-top: 70px;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  margin-top: 20px;
+  margin-right: 3px;
 }
 #formulario .row form .button:hover {
  border: 3px #040926 solid;
@@ -1378,7 +1389,6 @@ footer div {
 
   /*______________________section forum______________*/
   #forum .discussoes {
-    border: 4px rgb(128, 0, 49) solid;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -1582,6 +1592,9 @@ footer div {
   margin: 0px;
   padding: 0px;
   border: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #formulario .row form {
  margin: 0px;
@@ -1589,16 +1602,9 @@ footer div {
  border: 0px;
  border: 5px red solid;
 }
-#formulario .row textarea {
-  background: #132057;
-  width: 500px;
-  height: 15px;
-  border: 1.13227px solid #040714;
-  border-radius: 11.3227px;
-  resize: none;
-  align-self: flex-start;
-  margin-left: 80px;
-  margin-bottom: 15px;
+#formulario {
+  border: 3px green solid;
+  background-color: #8B008B;
 }
 
 }
