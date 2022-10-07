@@ -441,6 +441,7 @@ header input {
   background: #132a75;
   border: 1px solid #8B008B;
 }
+
 /*Formulario-Sugestoes End */
 
 
@@ -526,13 +527,13 @@ header input {
   border-bottom: 4px gray solid;
 }
 
-#novidades .containerNovidades .itemNovidade .container  iframe{
+#novidades .containerNovidades .itemNovidade .container iframe {
   max-height: 185px;
   margin-left: 5px;
   margin-right: 5px;
 }
 
-#novidades .containerNovidades .itemNovidade  .textoNovidades p {
+#novidades .containerNovidades .itemNovidade .textoNovidades p {
   max-width: 550px;
   max-height: 185px;
   margin: 0px;
@@ -545,7 +546,7 @@ header input {
   text-align: left;
 }
 
-#novidades .containerNovidades .itemNovidade  .textoNovidades  {
+#novidades .containerNovidades .itemNovidade .textoNovidades {
   padding-left: 30px;
 }
 
@@ -568,7 +569,7 @@ header input {
   max-height: 18px;
   background: #D9D9D9;
   border-radius: 16px;
-  color: #040926; 
+  color: #040926;
   text-align: center;
   font-size: 14px;
 }
@@ -584,10 +585,11 @@ header input {
   justify-content: flex-start;
   flex-direction: column;
   align-items: center;
-  
+
 
 }
-#novidades #novidadetrailer h2, 
+
+#novidades #novidadetrailer h2,
 #novidades #propaganda .titulo {
   font-size: 25px;
   font-weight: 400;
@@ -871,10 +873,10 @@ footer div {
   color: #FFFFFF;
 }
 
-#top10 h2{
-  margin:0px;
-  padding:0px;
-  border:0px;
+#top10 h2 {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
@@ -892,10 +894,10 @@ footer div {
 }
 
 #top10 .movie .top10 img {
-  max-width:210px;
-  max-height:280px;
+  max-width: 210px;
+  max-height: 280px;
   margin: 13px;
-} 
+}
 
 
 #top10 .movie::-webkit-scrollbar {
@@ -937,9 +939,9 @@ footer div {
   flex-direction: column;
   align-items: center;
   resize: none;
-  width: 700px; 
+  width: 700px;
   margin-left: auto;
-  margin-right: auto; 
+  margin-right: auto;
   padding-left: 25%;
 }
 
@@ -957,6 +959,7 @@ footer div {
   font-size: 16px;
   margin-left: 80px;
 }
+
 #formulario .row input {
   background: #132057;
   width: 500px;
@@ -968,6 +971,7 @@ footer div {
   margin-left: 80px;
   margin-bottom: 15px;
 }
+
 #formulario .row textarea {
   background: #132057;
   width: 500px;
@@ -996,8 +1000,9 @@ footer div {
   color: #000;
   text-align: center;
 }
+
 #formulario .row form .button:hover {
- border: 3px #040926 solid;
+  border: 3px #040926 solid;
 }
 
 
@@ -1015,10 +1020,11 @@ footer div {
   color: #fff;
 
 }
+
 #forum .discussoes h2 {
-  margin:0px;
-  padding:0px;
-  border:0px;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
@@ -1037,7 +1043,7 @@ footer div {
 #forum .formForum {
   margin-bottom: 5%;
   background-color: #D9D9D9;
-  border-radius: 3px; 
+  border-radius: 3px;
   margin-bottom: 5%;
 }
 
@@ -1048,13 +1054,15 @@ footer div {
   border-radius: 3px;
   display: grid;
   grid-template-columns: 20% 80%;
-  
+
 }
+
 #forum .dialogoforum .titulomensagem {
   text-align: center;
 }
-#forum .dialogoforum .conteudomensagem{
-  text-align:start;
+
+#forum .dialogoforum .conteudomensagem {
+  text-align: start;
 }
 
 #forum .dialogoforum .dialogoforumimg .imgdialogo {
@@ -1208,178 +1216,190 @@ footer div {
     text-shadow: 2px 2px 5px #1e5786;
     text-align: left;
   }
+
   /*______________________section novidades______________*/
 
-#novidades .containerNovidades {
-  padding: 5px;
-  margin: 0px;
-  border: 0px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-}
-#novidades .containerNovidades #novidadetrailer {
-  margin-bottom: 50px;
-  max-width: 90%;
-}
+  #novidades .containerNovidades {
+    padding: 5px;
+    margin: 0px;
+    border: 0px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
 
-#novidades .containerNovidades .itemNovidade {
-  display: flex;
-  flex-direction: column;
-  height: auto;
-  padding: 0px;
-  border-bottom: 4px gray solid;
-  max-width: 100%;
-  max-height: 100%;
-}
+  #novidades .containerNovidades #novidadetrailer {
+    margin-bottom: 50px;
+    max-width: 90%;
+  }
 
-#novidades .containerNovidades .itemNovidade .container  iframe{
-  max-width: 90%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  margin: 0px;
-  border: 0px;
+  #novidades .containerNovidades .itemNovidade {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 0px;
+    border-bottom: 4px gray solid;
+    max-width: 100%;
+    max-height: 100%;
+  }
 
-}
+  #novidades .containerNovidades .itemNovidade .container iframe {
+    max-width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 0px;
+    border: 0px;
 
-#novidades .containerNovidades .itemNovidade  .textoNovidades  {
-  margin: 0px;
-  padding: 0px;
-  border: 0px;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  flex-direction: column;
-  max-width: 100%;
-}
-#novidades .containerNovidades .itemNovidade  .textoNovidades ul {
-  padding: 5px;
-  margin: 0px;
-  border: 0px;
-  display: grid;
-  grid-template-columns: 45% 45%;
-}
-#novidades .containerNovidades .itemNovidade .textoNovidades p {
-  font-size: 16px;
-  padding: 10px;
-}
-#novidades .containerNovidades .itemNovidade .container iframe {
-  max-width: 95%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  margin: 0px;
-  border: 0px;
-  max-height: 100%;
+  }
 
-}
-#novidades .containerNovidades .itemNovidade  .textoNovidades ul li {
-  padding: 0px;
-  margin: 0px;
-  border: 0px;
-}
+  #novidades .containerNovidades .itemNovidade .textoNovidades {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  #novidades .containerNovidades .itemNovidade .textoNovidades ul {
+    padding: 5px;
+    margin: 0px;
+    border: 0px;
+    display: grid;
+    grid-template-columns: 45% 45%;
+  }
+
+  #novidades .containerNovidades .itemNovidade .textoNovidades p {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  #novidades .containerNovidades .itemNovidade .container iframe {
+    max-width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 0px;
+    border: 0px;
+    max-height: 100%;
+
+  }
+
+  #novidades .containerNovidades .itemNovidade .textoNovidades ul li {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+  }
 
 
-#novidades #propaganda {
-  padding: 0px;
-  margin: 0px;
-  border: 0px;
-  display: flex;
-  justify-content:center;
-  max-width: 90%;
-  
-}
+  #novidades #propaganda {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    display: flex;
+    justify-content: center;
+    max-width: 90%;
 
-#novidades #novidadetrailer h2, 
-#novidades #propaganda h2 {
-  font-size: 25px;
-  font-weight: 400;
-  text-align: center;
-  padding: 3px;
-  color: #fff;
-  margin: 0px;
-  line-height: 20px;
-}
+  }
 
-#novidades #propaganda img {
-  max-height: 100%;
-  margin-bottom: 5%;
-}
+  #novidades #novidadetrailer h2,
+  #novidades #propaganda h2 {
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+    padding: 3px;
+    color: #fff;
+    margin: 0px;
+    line-height: 20px;
+  }
 
-/*_________________________section formulario____________________________________*/
-#formulario {
-  background-color: #040714;
-}
-#formulario .row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#formulario .row h2 {
-  padding: 25px;
-  margin: 0px;
-  border: 0px;
-  line-height: 20px;
-}
-#formulario form {
-  padding: 0px;
-  margin: 0px;
-  border: 0px;
-  max-width: 90%;
-  max-height: 95%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-}
+  #novidades #propaganda img {
+    max-height: 100%;
+    margin-bottom: 5%;
+  }
 
-#formulario .row label {
-  font-weight: bold;
-  color: #F5F5F5;
-  height: 15px;
-  width: 80%;
-  font-size: 16px;
-  padding: 0px;
-  margin: 0px;
-  border: 0px;
-  padding-right: 30px;
-}
-#formulario .row input {
-  width: 50vw;
-  margin-bottom: 25px;
-  padding: 0px;
-  margin: 0px;
-  border: 0px;
-  margin-left: 12%;
-  margin-top: 5px;
-}
-#formulario .row textarea {
-  background: #132057;
-  width: 50vw;
-  height: 100px;
-  border: 1.13227px solid #040714;
-  border-radius: 11.3227px;
-  resize: none;
-  padding: 0px;
-  margin: 0px;
-  border: 0px;
-  margin-left: 12%;
-}
+  /*_________________________section formulario____________________________________*/
+  #formulario {
+    background-color: #040714;
+  }
 
-#formulario .row form .button {
-  padding: 0px;
-  margin: 0px;
-  border: 0px;
-  margin-top: 20px;
-  margin-right: 3px;
-}
-#formulario .row form .button:hover {
- border: 3px #040926 solid;
-}
+  #formulario .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #formulario .row h2 {
+    padding: 25px;
+    margin: 0px;
+    border: 0px;
+    line-height: 20px;
+  }
+
+  #formulario form {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    max-width: 90%;
+    max-height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  #formulario .row label {
+    font-weight: bold;
+    color: #F5F5F5;
+    height: 15px;
+    width: 80%;
+    font-size: 16px;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    padding-right: 30px;
+  }
+
+  #formulario .row input {
+    width: 50vw;
+    margin-bottom: 25px;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    margin-left: 12%;
+    margin-top: 5px;
+  }
+
+  #formulario .row textarea {
+    background: #132057;
+    width: 50vw;
+    height: 100px;
+    border: 1.13227px solid #040714;
+    border-radius: 11.3227px;
+    resize: none;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    margin-left: 12%;
+  }
+
+  #formulario .row form .button {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    margin-top: 20px;
+    margin-right: 3px;
+  }
+
+  #formulario .row form .button:hover {
+    border: 3px #040926 solid;
+  }
 
 
 
@@ -1484,122 +1504,128 @@ footer div {
     width: 30px;
   }
 
-  
-#novidades .containerNovidades {
-  padding: 0px;
-  margin: 0px;
-  border: 0px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-}
-#novidades .containerNovidades #novidadetrailer {
-  margin-bottom: 50px;
-  max-width: 90%;
-}
 
-#novidades .containerNovidades .itemNovidade {
-  display: flex;
-  flex-direction: column;
-  height: auto;
-  padding: 0px;
-  margin: 0px;
-  border-bottom: 4px gray solid;
-  max-width: 100%;
-  max-height: 100%;
-}
+  #novidades .containerNovidades {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
 
-#novidades .containerNovidades .itemNovidade .container  iframe{
-  max-width: 90%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  margin: 0px;
-  border: 0px;
+  #novidades .containerNovidades #novidadetrailer {
+    margin-bottom: 50px;
+    max-width: 90%;
+  }
 
-}
+  #novidades .containerNovidades .itemNovidade {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+    border-bottom: 4px gray solid;
+    max-width: 100%;
+    max-height: 100%;
+  }
 
-#novidades .containerNovidades .itemNovidade  .textoNovidades  {
-  margin: 0px;
-  padding: 0px;
-  border: 0px;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  flex-direction: column;
-  max-width: 100%;
-}
-#novidades .containerNovidades .itemNovidade  .textoNovidades ul {
-  padding: 5px;
-  margin: 0px;
-  border: 0px;
-  display: grid;
-  grid-template-columns: 45% 45%;
-}
-#novidades .containerNovidades .itemNovidade .textoNovidades p {
-  font-size: 16px;
-  padding: 10px;
-}
-#novidades .containerNovidades .itemNovidade .container iframe {
-  max-width: 95%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  margin: 0px;
-  border: 0px;
-  max-height: 100%;
+  #novidades .containerNovidades .itemNovidade .container iframe {
+    max-width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 0px;
+    border: 0px;
 
-}
-#novidades .containerNovidades .itemNovidade  .textoNovidades ul li {
-  padding: 0px;
-  margin: 0px;
-  border: 0px;
-}
+  }
+
+  #novidades .containerNovidades .itemNovidade .textoNovidades {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  #novidades .containerNovidades .itemNovidade .textoNovidades ul {
+    padding: 5px;
+    margin: 0px;
+    border: 0px;
+    display: grid;
+    grid-template-columns: 45% 45%;
+  }
+
+  #novidades .containerNovidades .itemNovidade .textoNovidades p {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  #novidades .containerNovidades .itemNovidade .container iframe {
+    max-width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 0px;
+    border: 0px;
+    max-height: 100%;
+
+  }
+
+  #novidades .containerNovidades .itemNovidade .textoNovidades ul li {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+  }
 
 
-#novidades #propaganda {
-  padding: 0px;
-  margin: 0px;
-  border: 0px;
-  display: flex;
-  justify-content:center;
-  max-width: 90%;
-  
-}
+  #novidades #propaganda {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    display: flex;
+    justify-content: center;
+    max-width: 90%;
 
-#novidades #novidadetrailer h2, 
-#novidades #propaganda h2 {
-  font-size: 25px;
-  font-weight: 400;
-  text-align: center;
-  padding: 3px;
-  color: #fff;
-  margin: 0px;
-  line-height: 20px;
-}
+  }
 
-#novidades #propaganda img {
-  max-height: 100%;
-}
+  #novidades #novidadetrailer h2,
+  #novidades #propaganda h2 {
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+    padding: 3px;
+    color: #fff;
+    margin: 0px;
+    line-height: 20px;
+  }
 
-/*_______________________________formulario_____________________*/
-#formulario .row {
-  margin: 0px;
-  padding: 0px;
-  border: 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#formulario .row form {
- margin: 0px;
- padding: 0px;
- border: 0px;
- max-height: 93%;
-}
+  #novidades #propaganda img {
+    max-height: 100%;
+  }
+
+  /*_______________________________formulario_____________________*/
+  #formulario .row {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #formulario .row form {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    max-height: 93%;
+  }
 
 }
 
@@ -1607,19 +1633,69 @@ footer div {
   .avaliacoes-wrapper {
     flex-direction: row;
   }
+
+  #formulario {
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #formulario .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #formulario .row h2 {
+    margin-bottom: 0px;
+    min-height: 95%;
+  }
+
+  #formulario .row form {
+    margin: 0px;
+    padding: 20px;
+    border: 0px;
+    max-height: 90%;
+    max-width: 80%;
+   }
+  #comunidade #containerComunidade {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+  #comunidade #containerComunidade .usuarios ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #comunidade #containerComunidade .usuarios li img {
+    max-width: 50px;
+    min-height: 50px;
+    border-radius: 30px;
+  }
 }
+
 
 
 /* telas maiores */
 @media (min-width: 1335px) {
-.favoritos-wrapper {
+  .favoritos-wrapper {
     flex-direction: row;
   }
-#comunidade #containerComunidade {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  flex-wrap: wrap;
-}
+
+  #comunidade #containerComunidade {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+  #formulario .row form {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    max-height: 90%;
+  }
 }
