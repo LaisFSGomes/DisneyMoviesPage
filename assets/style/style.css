@@ -1017,17 +1017,21 @@ header input {
   display: flex;
 }
 #forum.discussoes,textarea{
-  width: 90%;
-  padding: 50px;
+  width: 967px;
+  height: 122px;
   border-radius: 10px;
   background-color:#9395A1;
+  margin: 5px 20px 5px 20px;
+  font-size: 22.29px;
 }
 
 #forum.discussoes,input{
-  width: 95%;
-  padding: 20px;
+  width: 967px;
+  height: 42px;
   border-radius:10px;
   background-color:#9395A1;
+  margin: 5px 20px 5px 20px;
+  font-size: 22.29px;
 }
 #forum.discussoes.formforum,button{
   justify-content: center;
@@ -1051,15 +1055,15 @@ header input {
   background-color: #D9D9D9;
   border-radius: 3px;
   margin-bottom: 5%;
-  width: 1235px;
+  width: 1225x;
   height: 322px;
   color: #000;
   font-style: normal;
-  font-weight: 500;
+  font-weight: bolder;
   font-size: 26px;
   line-height: 31px;
   text-align:start;
-
+  left: 233px;
 }
 
 #forum .dialogoforum {
