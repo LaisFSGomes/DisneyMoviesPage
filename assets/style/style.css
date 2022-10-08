@@ -1038,13 +1038,12 @@ header input {
   align-items: center;
   border-radius:9.28752px;
   background-color: #040926;
-  width: 129.1px;
+  width: 130.1px;
   height: 33.44px;
   color: #fff;
   font-style: normal;
   font-size: 16px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+
 }
 
 #forum .formForum {
@@ -1089,6 +1088,23 @@ header input {
   margin: 30px 0px 30px 30px;
 
 }
+
+#forum .dialogoforum .imgforum{
+  width: 225px;
+  height: 25px;
+
+}
+#forum .dialogoforum .imglike{
+  width: 225px;
+  height: 25px;
+}
+
+#forum .dialogoforum .imgolho{
+  width: 225px;
+  height: 25px;
+}
+
+
 
 
 /*-----------------------------------------------------------------------------------*/
