@@ -366,7 +366,7 @@ header input {
   background-color: #132057;
   resize: none;
   height: 12em;
-  width: 98%;
+  width: 99%;
   overflow: hidden;
 }
 
@@ -380,7 +380,6 @@ header input {
   border: 3px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  outline: none;
 }
 
 #sugestoes .user-detalhes .input-box input:focus,
@@ -394,7 +393,7 @@ header input {
   display: flex;
   justify-content: center;
   padding: 0px;
-  margin-top: 5%;
+  margin-top: 10%;
   min-width: 5vw;
   min-height: 8vh;
 }
@@ -1561,7 +1560,7 @@ footer div {
   }
 #comunidade #containerComunidade .divComunidades {
   grid-area: divcomunidade;
-  padding: 15px;
+  padding-right: 15px;
 }
 
   .mensagens .container #dialogo .mensagemdialogo {
