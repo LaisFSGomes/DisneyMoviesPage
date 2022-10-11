@@ -1,12 +1,12 @@
 /*-----------------------------------------------------------------------------------*/
 /*                              Configurações Padrão
 /*-----------------------------------------------------------------------------------*/
-@font-face {
-  font-family: "Avenir";
+/* @font-face {
   src: url(/assets/fonts/avenir_ff/AvenirLTStd-Black.otf);
   src: url(/assets/fonts/avenir_ff/AvenirLTStd-Book.otf);
   src: url(/assets/fonts/avenir_ff/AvenirLTStd-Roman.otf);
-}
+  font-family: "Avenir";
+} */
 
 
 body {
@@ -16,7 +16,7 @@ body {
   overflow-x: hidden;
   font-family: 'Montserrat';
   font-size: 18px;
-  font-weight: 550;
+  /* font-weight: 550; */
   line-height: 22px;
   letter-spacing: 0em;
 }
@@ -69,14 +69,37 @@ header input {
 /*-----------------------------------------------------------------------------------*/
 /*                                Section lançamentos
 /*-----------------------------------------------------------------------------------*/
-
 #lancamentos {
   background: #040926;
   color: #FFFFFF;
+}
+
+#lancamentos .lancamentos-wrapper {
+  display: flex;
+  /* flex-direction: row; */
+  overflow-x: scroll;
+}
+
+#lancamentos .lancamentos-wrapper::-webkit-scrollbar {
+  width: 30px;
+}
+
+#lancamentos .lancamentos-wrapper::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+#lancamentos .lancamentos-wrapper::-webkit-scrollbar-thumb {
+  background-color: #ffffff1c;
+  border-radius: 10px;
+  height: 5px;
+}
+
+#lancamentos #first, #lancamentos #second, #lancamentos #third {
   display: flex;
   flex-direction: row;
   align-items: stretch;
   padding: 50px 0px;
+  min-width: 100vw;
 }
 
 #lancamentos .video {
@@ -93,7 +116,6 @@ header input {
 
 #lancamentos .info {
   min-width: 50%;
-  max-height: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -126,6 +148,22 @@ header input {
 
 #lancamentos .info #info-avaliacoes #stars img:hover {
   width: 30.5px;
+}
+
+#lancamentos .dots {
+  display: flex;
+  justify-content: center;
+}
+
+#lancamentos .dots a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 4em;
+  padding: 10px;
+}
+
+#lancamentos .dots a:hover {
+  color: rgb(193, 193, 193);
 }
 
 /*-----------------------------------------------------------------------------------*/
@@ -987,7 +1025,7 @@ header input {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background:#040714;
+  background: #040714;
   color: #fff;
 }
 
@@ -1009,6 +1047,7 @@ header input {
   justify-content: center;
   align-items: center;
 }
+
 #forum .divformForum {
   display: flex;
   flex-direction: column;
@@ -1021,7 +1060,7 @@ header input {
 
 #forum .formForum {
   margin: 0px;
-  padding:0px;
+  padding: 0px;
   display: flex;
   flex-direction: column;
   background-color: #D9D9D9;
@@ -1034,6 +1073,7 @@ header input {
   width: 90%;
   height: 220px;
 }
+
 #forum .discussoes .formForum label {
   font-style: normal;
   font-weight: 500;
@@ -1054,6 +1094,7 @@ header input {
   border: none;
   margin-left: 1%;
 }
+
 #forum .discussoes .formForum input {
   width: 90%;
   max-height: 121px;
@@ -1064,6 +1105,7 @@ header input {
   border: none;
   margin-left: 5px;
 }
+
 #forum .discussoes .formForum .button {
   padding: 0px;
   max-width: 200px;
@@ -1107,20 +1149,23 @@ header input {
 
 }
 
-#forum .dialogoforum  .iconesDeInteracao {
+#forum .dialogoforum .iconesDeInteracao {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
+
 #forum .dialogoforum .dialogoforumimg .iconesDeInteracao img {
   max-width: 8px;
   max-height: 8px;
 }
+
 #forum .forumcomentario {
   color: #991313;
   font-size: 18px;
   text-align: center;
 }
+
 #forum .forumlike {
   color: #269913;
   font-size: 18px;
@@ -1246,10 +1291,9 @@ footer div {
   }
 
   /* __________lançamentos_________________ */
-  #lancamentos {
+ 
+  #lancamentos .lancamentos-wrapper #first, #lancamentos .lancamentos-wrapper #second, #lancamentos .lancamentos-wrapper #third {
     flex-direction: column;
-    align-items: center;
-    padding: 20px 0px;
   }
 
   #lancamentos .info p {
@@ -1258,6 +1302,10 @@ footer div {
 
   #stars img {
     width: 30px;
+  }
+  #lancamentos .dots a {
+    font-size: 2em;
+    padding: 5px;
   }
 
   /*___________section sugestao________________*/
@@ -1500,7 +1548,7 @@ footer div {
   }
 
   #comunidade #containerComunidade {
-    margin: 0; 
+    margin: 0;
     padding-right: 20px;
     margin: 0;
     display: grid;
@@ -1508,7 +1556,7 @@ footer div {
     grid-template-rows: 55% 45%;
     column-gap: 20px;
     row-gap: 20px;
-    grid-template-areas: 
+    grid-template-areas:
       'usuarios divcomunidade'
       'mensagens mensagens';
     background: #000;
@@ -1523,32 +1571,38 @@ footer div {
     max-width: 95%;
     max-height: 99%;
   }
+
   #comunidade #containerComunidade .usuarios {
     grid-area: usuarios;
     padding: 0px;
   }
+
   #comunidade #containerComunidade .mensagens {
     margin: 0px;
     padding: 0px;
-    border: 0px;  
+    border: 0px;
     grid-area: mensagens;
     max-height: 80%;
   }
+
   #comunidade .titulo {
     background-color: #000;
     text-align: center;
-  } 
-  #comunidade #containerComunidade .mensagens .titulo{
+  }
+
+  #comunidade #containerComunidade .mensagens .titulo {
     background-color: #000;
     text-align: center;
     padding: 5%;
     font-size: 40px;
   }
+
   .mensagens .container #dialogo .imgdialogoresposta {
     max-width: 40px;
     max-height: 40px;
     margin-left: 10%;
   }
+
   .mensagens .container #dialogo {
     max-width: 90%;
     display: flex;
@@ -1558,10 +1612,11 @@ footer div {
     font-weight: 400;
     margin-bottom: 0px;
   }
-#comunidade #containerComunidade .divComunidades {
-  grid-area: divcomunidade;
-  padding-right: 15px;
-}
+
+  #comunidade #containerComunidade .divComunidades {
+    grid-area: divcomunidade;
+    padding-right: 15px;
+  }
 
   .mensagens .container #dialogo .mensagemdialogo {
     width: 90%;
@@ -1588,9 +1643,11 @@ footer div {
     max-width: 7px;
     margin-top: 15px;
   }
+
   #comunidade #containerComunidade .usuarios span {
     font-size: 14px;
   }
+
   /*______________________section forum______________*/
   #forum {
     display: flex;
@@ -1599,16 +1656,19 @@ footer div {
     padding: 0px;
     border: 0px;
   }
+
   #forum .discussoes {
     display: flex;
     flex-direction: column;
     width: 90%;
   }
+
   #forum .discussoes .dialogoforum {
-  display: inline-block;
-  height: auto;
-  width: 98%;
+    display: inline-block;
+    height: auto;
+    width: 98%;
   }
+
   #forum .discussoes .dialogoforum .dialogoforumimg {
     display: flex;
     flex-direction: column;
@@ -1616,6 +1676,7 @@ footer div {
     align-content: space-around;
     width: 100%;
   }
+
   #forum .discussoes .dialogoforum .dialogoforumtexto {
     display: flex;
     flex-direction: column;
@@ -1636,27 +1697,6 @@ footer div {
     width: 100%;
     justify-content: space-around;
   }
-
-  #lancamentos {
-    padding: 30px 0px;
-  }
-
-  #lancamentos .video {
-    min-width: 60%;
-  }
-
-  #lancamentos .info {
-    min-width: 40%;
-  }
-
-  #info-avaliacoes h3 {
-    margin: 5px;
-  }
-
-  #stars img {
-    width: 30px;
-  }
-
 
   #novidades .containerNovidades {
     padding: 0px;
