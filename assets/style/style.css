@@ -126,7 +126,7 @@ header input {
   margin: 5px 0px;
 }
 
-#sinopse {
+.sinopse {
   width: 90%;
   height: 90%;
 }
@@ -135,18 +135,18 @@ header input {
   font-weight: bold;
 }
 
-#lancamentos .info #info-avaliacoes {
+#lancamentos .info .info-avaliacoes {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#lancamentos .info #info-avaliacoes #stars img {
+#lancamentos .info .info-avaliacoes .stars img {
   width: 30px;
   transition-duration: 0.5s;
 }
 
-#lancamentos .info #info-avaliacoes #stars img:hover {
+#lancamentos .info .info-avaliacoes .stars img:hover {
   width: 30.5px;
 }
 
@@ -1299,7 +1299,7 @@ footer div {
     text-align: justify;
   }
 
-  #stars img {
+  .stars img {
     width: 30px;
   }
   #lancamentos .dots a {
