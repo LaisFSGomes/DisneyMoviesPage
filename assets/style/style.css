@@ -442,13 +442,12 @@ header input {
   min-width: 10vw;
   color: #fff;
   background: #132057;
-  border: 1px solid #111C4D;
-  box-shadow: 0px 4px 4px rgba(5, 9, 28, 0.67);
+  box-shadow:0 5px 0 #091141;
+  border: none;
+  cursor: pointer;
   border-radius: 10px;
   font-style: normal;
-  font-weight: 200;
   font-size: 16px;
-  line-height: 24px;
   padding: 5px;
   margin: 0px;
 }
@@ -459,7 +458,6 @@ header input {
   border: none;
   color: #fff;
   font-size: 16px;
-  font-weight: 400;
   letter-spacing: 1px;
   border-radius: 10px;
   cursor: pointer;
@@ -474,7 +472,6 @@ header input {
 
 #sugestoes .container .form .user-detalhes .button input:hover {
   background: #132a75;
-  border: 1px solid #8B008B;
 }
 
 /*Formulario End */
@@ -491,7 +488,7 @@ header input {
   font-size: clamp(0.2em, 0.7em + 0.5vw, 1.0em);
   text-align: justify;
   margin-right: 10%;
-  font-weight: 300;
+  font-weight: 100;
   line-height: 25px;
   color: #FFFFFF;
 }
@@ -576,7 +573,6 @@ header input {
   padding: 0px;
   border: 0px;
   font-size: 15px;
-  font-weight: 500;
   line-height: 18px;
   letter-spacing: 0em;
   text-align: left;
@@ -716,7 +712,7 @@ header input {
 }
 
 #comunidade #containerComunidade .usuarios span {
-  font-weight: 500;
+  font-weight: 300;
   font-size: 20px;
   color: #FFFFFF;
   padding: 0px;
@@ -845,7 +841,7 @@ header input {
 
 .mensagens .container #dialogo .mensagemdialogoenviar {
   font-family: 'open sans';
-  font-size: .70em;
+  font-size: 18px;
   border-radius: 20px;
   width: 900px;
   height: 100px;
@@ -854,6 +850,9 @@ header input {
   color: #000;
   background: #D9D9D9;
   margin-top: 50px;
+  resize: none;
+  padding: 10px;
+  border-style: hidden;
 }
 
 .mensagens .container #dialogo label {
@@ -1678,6 +1677,7 @@ footer div {
   }
 
   #forum .discussoes .dialogoforum .dialogoforumtexto {
+    padding-bottom: 10px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
